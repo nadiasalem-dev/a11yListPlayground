@@ -1,50 +1,22 @@
-# Welcome to your Expo app 👋
+# a11yListPlayground
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## What is this?
+This is a practice app using React Native. I am building a very basic list app while focusing on accessibility from the start.
 
-## Get started
+## Why did I build this?
+I watched a demonstration by Apple at the CSUN Assistive Technology Conference in 2026 and wanted to try it myself. Their demo used Swift, so I want to see if I can build something similar using React Native, including testing accessibility features.
 
-1. Install dependencies
+## What does it do right now?
+- Nothing yet (initial setup phase)
 
-   ```bash
-   npm install
-   ```
+## Accessibility decisions
+- Make sure the "Add Item" button has a meaningful accessibility label instead of just "button"
+- Use color-blind-friendly dots aligned with the first line of each list item to help indicate structure
+- Avoid relying only on color; include category information in accessibility labels
+- Design interactions carefully so actions like deleting items are clearly distinguishable from screen reader gestures
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Future plans
+- Start by building the basic UI
+- Add accessible list functionality
+- Test with screen readers (VoiceOver / TalkBack)
+- Explore edge cases like dynamic text resizing
